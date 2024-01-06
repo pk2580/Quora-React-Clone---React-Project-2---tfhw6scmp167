@@ -1,0 +1,229 @@
+.navbar {
+    width: 100%;
+    height: 95px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar .wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .left {
+    width: 20%;
+}
+
+.wrapper .right {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container .search-icon {
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    color: #aaa;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.search-container input {
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    padding-left: 60px;
+    border: none;
+    outline-color: #B92B27;
+    border-radius: 50px;
+    color: #2b2a2a;
+    background-color: #ddd;
+}
+
+.search-container input::placeholder {
+    letter-spacing: 1px;
+}
+
+
+.wrapper ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    padding: 0 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ff0f07;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B92B27;
+}
+
+.btn-login {
+    padding: 12px;
+}
+
+.user-avatar {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.menu {
+    display: none;
+}
+
+
+@media screen and (max-width:690px) {
+    .navbar{
+        height: 65px;
+    }
+    .navbar .wrapper {
+        padding: 0 10px;
+    }
+
+    .wrapper .left {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left .logo img {
+        width: 100px;
+    }
+
+    .search-container .search-icon {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .search-container input {
+        font-size: 16px;
+        width: 200px;
+        height: 40px;
+        padding-left: 40px;
+
+    }
+
+    .search-container input::placeholder {
+        letter-spacing: normal;
+    }
+
+    button {
+        padding: 0 10px;
+        font-size: 16px;
+    }
+
+    .wrapper .right {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+    }
+
+    .right .lists {
+        height: 100vh;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        top: 64px;
+        right: -300px;
+        background-color: #fff;
+        z-index: 2;
+        transition: all 0.5s ease;
+    }
+
+    .right .lists li {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .right .active {
+        display: block;
+        position: fixed;
+        right: 0;
+    }
+}
+
+@media screen and (min-width:691px) and (max-width:910px) {
+    .navbar{
+        height: 85px;
+    }
+    .navbar .wrapper {
+        padding: 0 15px;
+    }
+
+    .wrapper .left {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left .logo img {
+        width: 140px;
+    }
+
+    .wrapper .right {
+        width: 70%;
+    }
+
+    .search-container .search-icon {
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 6px;
+        left: 6px;
+    }
+
+    .search-container input {
+        font-size: 18px;
+        width: 250px;
+        height: 50px;
+        padding-left: 50px;
+
+    }
+
+    .search-container input::placeholder {
+        letter-spacing: 0.5px;
+    }
+
+    button {
+        padding: 0 10px;
+        font-size: 18px;
+    }
+}

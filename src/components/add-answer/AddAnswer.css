@@ -1,0 +1,126 @@
+.add-answer-container .navbar .right {
+    visibility: hidden;
+}
+
+.add-answer-container .navbar .search-container {
+    display: none;
+}
+
+.add-answer {
+    width: 100%;
+    margin: 0 40px 40px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 120px;
+}
+
+.add-answer .left {
+    width: 30%;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.add-answer .left .title {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.add-answer .left .question-lists {
+    max-height: 45vh;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.add-answer .left .question-list {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.add-answer .right {
+    width: 70%;
+    position: relative;
+}
+
+.add-answer .right label {
+    position: absolute;
+    left: 10px;
+    font-size: 25px;
+    color: #aaa;
+    font-weight: 900;
+}
+
+.add-answer .right textarea {
+    width: 60vw;
+    height: 200px;
+    min-width: 170px;
+    font-size: 20px;
+    border: none;
+    outline-color: #1778F2;
+    padding: 30px 10px;
+}
+
+.right textarea::placeholder {
+    word-spacing: 5px;
+}
+
+.right .buttons {
+    position: relative;
+    top: 10px;
+    right: 140px;
+}
+
+.right .buttons button {
+    padding: 12px;
+}
+
+@media screen and (max-width:690px) {
+    .add-answer {
+        margin: 0 20px 20px 15px;
+        gap: 10px;
+        top: 80px;
+    }
+
+    .add-answer .left {
+        width: 40%;
+    }
+
+    .add-answer .left .title {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .add-answer .left .question-list {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .add-answer .right {
+        width: 50%;
+    }
+
+    .add-answer .right label {
+        font-size: 20px;
+    }
+
+    .add-answer .right textarea {
+        width: 50vw;
+        font-size: 16px;
+    }
+
+    .right .buttons {
+        top: 5px;
+        right: 2px;
+    }
+
+    .right .buttons button {
+        padding: 5px;
+    }
+
+}
+
+@media screen and (min-width:691px) and (max-width:1024px) {
+    .right .buttons {
+        right: 90px;
+    }
+}
